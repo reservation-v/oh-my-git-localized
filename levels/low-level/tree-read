@@ -1,20 +1,26 @@
 [description]
 
-treeread_description_279
+_(As soon as you have some tree objects, you can always read them and set the index exactly to their content! Unsurprisingly, the command is called
+
+    git read-tree <tree>
+
+For <tree>, you can provide the hash of any tree object - you can right-click one to insert its hash into the terminal!
+
+Try reading some of the trees in this repository into the index!)
 
 [setup]
 
 EMPTY_TREE=$(git write-tree)
 
-echo "@@setup_auto_102@@" > file1
-echo "@@setup_auto_103@@" > file2
+echo "_(file 1)" > file1
+echo "_(file 2)" > file2
 git add .
 git write-tree
 
 rm *
-echo "@@setup_auto_104@@" > fileA
-echo "@@setup_auto_105@@" > fileB
-echo "@@setup_auto_106@@" > fileC
+echo "_(file A)" > fileA
+echo "_(file B)" > fileB
+echo "_(file C)" > fileC
 git add .
 TRIPLE_TREE=$(git write-tree)
 
@@ -24,15 +30,15 @@ git read-tree "$EMPTY_TREE"
 
 EMPTY_TREE=$(git write-tree)
 
-echo "@@setup_auto_107@@" > file1
-echo "@@setup_auto_108@@" > file2
+echo "_(file 1)" > file1
+echo "_(file 2)" > file2
 git add .
 git write-tree
 
 rm *
-echo "@@setup_auto_109@@" > fileA
-echo "@@setup_auto_110@@" > fileB
-echo "@@setup_auto_111@@" > fileC
+echo "_(file A)" > fileA
+echo "_(file B)" > fileB
+echo "_(file C)" > fileC
 git add .
 TRIPLE_TREE=$(git write-tree)
 

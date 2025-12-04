@@ -1,23 +1,23 @@
-title = split_title_172
+title = _(Split a commit!)
 cards = checkout commit reset-hard reset add rebase-interactive rebase-continue show
 
 [description]
 
-split_description_173
+_(Here, both changes happened in one commit! Split them to be in two commits instead.)
 
 [setup]
 
-echo @@setup_auto_061@@  > file1
-echo @@setup_auto_062@@  > file2
+echo "_(something)"  > file1
+echo "_(something else)"  > file2
 git add .
 git commit -m "Initial commit"
 
-echo @@setup_auto_063@@  >> file1
-echo @@setup_auto_064@@  >> file2
+echo "_(this should happen first)"  >> file1
+echo "_(and this should happen after that)"  >> file2
 git commit -am "Both together"
 
-echo @@setup_auto_065@@  >> file1
-echo @@setup_auto_066@@  >> file2
+echo "_(this is some other change)"  >> file1
+echo "_(this is some other change)"  >> file2
 git commit -am "Something else"
 
 [win]

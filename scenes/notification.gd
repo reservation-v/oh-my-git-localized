@@ -2,16 +2,16 @@ extends PanelContainer
 
 var text setget _set_text
 var button_texts = [
-	"notif_btn_got_it",
-	"notif_btn_interesting",
-	"notif_btn_very_useful",
-	"notif_btn_cool",
-	"notif_btn_nice",
-	"notif_btn_thanks",
-	"notif_btn_whatever",
-	"notif_btn_okay",
-	"notif_btn_yay",
-	"notif_btn_awesome"
+	"Got it!",
+	"Interesting!",
+	"Very useful!",
+	"Cool!",
+	"Nice!",
+	"Thanks!",
+	"Whatever...",
+	"Okay!",
+	"Yay!",
+	"Awesome!"
 ]
 
 func _ready():

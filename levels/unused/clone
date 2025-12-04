@@ -1,9 +1,9 @@
-title = clone_title_168
+title = _(Cloning a repo)
 cards = clone commit-auto pull push
 
 [description]
 
-clone_description_169
+_(Get your friend's repo using `clone`, change something, push it back.)
 
 [setup]
 

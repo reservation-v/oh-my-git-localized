@@ -1,28 +1,32 @@
-title = grow_title_094
+title = _(Branches grow with you!)
 cards = checkout commit-auto branch branch-delete reset-hard
 
 [description]
 
-grow_description_095
+_(Note that there are two options to "travel to the end of a timeline":
+
+First, you can directly travel to the commit, like we've done it before.
+
+And second, you can travel to the branch label. In this case, when you make a new commit, the branch will grow with you, and still point at the end of the timeline!)
 
 [cli]
 
-cli_grow_007
+_(To travel to a branch, type `git checkout name_of_the_branch`)
 
-cli_grow_008
+_(And to travel to the last commit, type `git checkout --detach name_of_the_branch`)
 
 [setup]
 
-echo "@@setup_auto_183@@" > you
+echo "_(You wrap the birthday present, and grab your concert ticket.)" > you
 git add .
 git commit -m "Evening preparations"
-echo "@@setup_auto_184@@" >> you
+echo "_(You go to the birthday party!)" >> you
 git add .
 git commit -m "Go to the birthday"
 git branch birthday
 
 git checkout HEAD~1
-echo "@@setup_auto_185@@" > you
+echo "_(You go to the concert!)" > you
 git add .
 git commit -m "Go to the concert"
 git branch concert
@@ -33,7 +37,7 @@ git branch -D main
 
 [win]
 
-# grow_win_hint_096
+# _(Travel directly to the last yellow commit of the birthday timeline, make a change to 'you', and make a commit)
 for commit in $(git cat-file --batch-check='%(objectname) %(objecttype)' --batch-all-objects | grep 'commit$' | cut -f1 -d' '); do
     if test $(git rev-parse $commit^) = $(git rev-parse birthday); then
         return 0
@@ -41,5 +45,5 @@ for commit in $(git cat-file --batch-check='%(objectname) %(objecttype)' --batch
 done
 return 1
 
-# grow_win_hint_097
+# _(Travel to the blue 'concert' branch, make a change to 'you', and a commit.)
 git show concert^ | grep "Go to the concert"

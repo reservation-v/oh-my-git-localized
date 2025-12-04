@@ -1,6 +1,11 @@
 [description]
 
-puzzleapocalypse_description_303
+_(Delete all objects in this repository using git commands only!
+
+Useful commands:
+
+    git prune
+    git reflog expire)
 
 [setup]
 
@@ -9,7 +14,7 @@ BLOB=$(git hash-object -w foo)
 echo bar > bar
 git add .
 git commit -m "Initial commit"
-echo @@setup_auto_115@@  >> bar
+echo "_(blabber)"  >> bar
 git commit -a -m "Second commit"
 git update-ref refs/important HEAD
 git update-ref refs/interesting "$BLOB"
@@ -21,7 +26,7 @@ BLOB=$(git hash-object -w foo)
 echo bar > bar
 git add .
 git commit -m "Initial commit"
-echo @@setup_auto_116@@  >> bar
+echo "_(blabber)"  >> bar
 git commit -a -m "Second commit"
 git update-ref refs/important HEAD
 git update-ref refs/interesting "$BLOB"

@@ -21,7 +21,7 @@ func load(path):
 		
 		title = tr(config.get("title", "default_title_key"))
 		var description_text = tr(config.get("description", "default_description_key"))
-		congrats = tr(config.get("congrats", "default_congrats_key"))
+		congrats = tr(config.get("congrats", "Good job, you solved the level!\n\nFeel free to try a few more things or click 'Next level'."))
 
 		var cli_hints_keys_block = config.get("cli", "")
 		var translated_cli_lines = []
@@ -92,7 +92,7 @@ func load(path):
 			if not repos.has(repo):
 				repos[repo] = LevelRepo.new()
 			
-			var desc = tr(config.get("win_desc", "default_win_desc_key"))
+			var desc = tr(config.get("win_desc", "Complete the goal of this level"))
 			for line in Array(config[k].split("\n")):
 				if line.length() > 0 and line[0] == "#":
 					var hint_key = line.substr(1).strip_edges(true, true)

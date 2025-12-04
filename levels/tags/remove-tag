@@ -1,23 +1,34 @@
-title = removetag_title_237
+title = _(Removing tags)
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-removetag_description_238
+_(You added way too many tags? No prob! Delete them with
+
+    git tag -d <tag-name>
+
+Remove all tags in this repo!
+
+---
+tipp1
+---
+tipp2
+---
+tipp3)
 
 [setup]
 
-echo "@@setup_auto_139@@" > feature-list
+echo "_(event 1)" > feature-list
 
 git add .
 git commit -m "Adding feature 1"
 
-echo "@@setup_auto_140@@" >> feature-list
+echo "_(event 2)" >> feature-list
 
 git add .
 git commit -m "Adding feature 2"
 
-echo "@@setup_auto_141@@" >> feature-list
+echo "_(event 3)" >> feature-list
 
 git add .
 git commit -m "Adding feature 3"
@@ -30,7 +41,7 @@ git checkout --detach main
 
 [win]
 
-# removetag_win_hint_239
+# _(Did you remove all tags?)
 test "$(git tag -l | wc -l)" -eq 0
 
 [actions]
@@ -39,4 +50,4 @@ test "$(git tag -l | wc -l)" -eq 0
 
 [congrats]
 
-addtaglater_congrats_235
+_(Well done :))

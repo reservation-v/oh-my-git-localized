@@ -1,30 +1,41 @@
-title = stashpop_title_148
+title = _(Pop from Stash)
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-stashpop_description_149
+_(When you stashed your changes and you want to apply them back to your current working directory, you can use 
+    git stash pop
+
+This will remove the changes from the stash stack. If you also want to keep the changes on the stash stack, use 
+    git stash apply)
+
+---
+tipp1
+---
+tipp2
+---
+tipp3)
 
 [setup]
 
-echo "@@setup_auto_164@@" > recipe
+echo "_(Apple Pie:)" > recipe
 
 git add .
 git commit -m "creating a recipe"
 
-echo "@@setup_auto_165@@" >> recipe
+echo "_(- 4 Apples)" >> recipe
 
 git add .
 git commit -m "Adding ingredients"
 
-echo "@@setup_auto_166@@" >> recipe
+echo "_(- 500g Flour)" >> recipe
 
 git stash push
 git checkout main
 
 [win]
 
-# stashpop_win_hint_151
+# _(Did you pop the changes from the stash stack?)
 test "$(git stash list | wc -l)" -eq 0
 
 [actions]
@@ -33,4 +44,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-stashpop_congrats_150
+_(Yay, you got your changes back! :))

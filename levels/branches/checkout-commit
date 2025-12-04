@@ -1,28 +1,32 @@
-title = checkoutcommit_title_085
+title = _(Moving through time)
 cards = checkout commit-auto
 
 [description]
 
-checkoutcommit_description_086
+_(The yellow boxes are frozen points in time, we call them "commits"! You can travel between them using the "checkout" card! (Try it!)
+
+Can you find out what happened here? Then, while on the last commit, edit the files to fix the problem, and make a new commit!)
 
 [cli]
 
-cli_checkoutcommit_015
+_(To checkout a specific commit, type `git checkout`, then a space, and then right click on the commit you want!)
 
-cli_checkoutcommit_016
+_(This will insert the commit's unique identifier!)
 
 [setup]
 
-echo "@@setup_auto_201@@" > piggy_bank
+echo "_(This piggy bank belongs to the big sister.
+It contains 10 coins.)" > piggy_bank
 git add .
 git commit -m "The beginning"
 
-echo "@@setup_auto_202@@" > little_sister
+echo "_(A young girl with brown, curly hair.)" > little_sister
 git add .
 git commit -m "Little sister comes in"
 
-echo "@@setup_auto_203@@" >> little_sister
-echo "@@setup_auto_204@@" > piggy_bank
+echo "_(Has 10 coins.)" >> little_sister
+echo "_(This piggy bank belongs to the big sister.
+It is empty.)" > piggy_bank
 git add .
 git commit -m "Little sister does something"
 
@@ -31,9 +35,9 @@ git branch -df main
 
 [win]
 
-# checkoutcommit_win_hint_088
+# _(Restore sisterly peace.)
 { git show HEAD:piggy_bank | grep "10 coins"; } && { test $(git show HEAD:little_sister | wc -l) -eq $(git show HEAD:little_sister | grep -v "10 coins" | wc -l); } && { git rev-parse HEAD^^^; }
 
 [congrats]
 
-checkoutcommit_congrats_087
+_(Wonderful! Now that you're getting familiar with the time machine, let's look at some more complicated situations...)

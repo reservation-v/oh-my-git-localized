@@ -1,11 +1,15 @@
 [description]
 
-refremove_description_304
+_(And finally, to delete a ref, use
+
+    git update-ref -d refs/<refname>
+
+Delete all refs! :P (Well, except for HEAD. HEAD is special.))
 
 [setup]
 
-echo @@setup_auto_073@@  > hello
-echo @@setup_auto_074@@  > world
+echo "_(hello)"  > hello
+echo "_(world)"  > world
 BLOB1=$(git hash-object -w hello)
 BLOB2=$(git hash-object -w world)
 git add .
@@ -17,8 +21,8 @@ git update-ref refs/beautiful_commit "$COMMIT"
 
 [setup goal]
 
-echo @@setup_auto_075@@  > hello
-echo @@setup_auto_076@@  > world
+echo "_(hello)"  > hello
+echo "_(world)"  > world
 BLOB1=$(git hash-object -w hello)
 BLOB2=$(git hash-object -w world)
 git add .

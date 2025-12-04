@@ -1,21 +1,29 @@
-title = bisect_title_261
+title = _(Yellow brick road)
 cards = checkout commit-auto reset-hard bisect-start bisect-good bisect-bad
 
 [description]
 
-bisect_description_262
+_((Please zoom out a bit using your mouse wheel! :D)
+
+Oh no! You have lost your key at some point during the day!
+
+Sure, you could look at every single commit in an attempt to find it - but there's a better way: your time machine has a built-in way to find the point in time where things went wrong quickly!
+
+First, play the "bisect start" card. Then, go to a commit where you don't have the key, and play the "bisect bad" card. Likewise, go to a commit early on where you have the key in your pocket, and play the "bisect good" card.
+
+After you've found the last good commit, reset the main branch to it. What happened to the key after you lost it?)
 
 [setup]
 
-echo "@@setup_auto_217@@" > you
+echo "_(You still have your key.)" > you
 
 for i in {1..30}; do
     if test $i -eq 12; then
-        echo "@@setup_auto_218@@" > you
-        echo "@@setup_auto_219@@" > key
+        echo "_(Your pocket is empty.)" > you
+        echo "_(Is on the ground.)" > key
     fi
     if test $i -eq 13; then
-        echo "@@setup_auto_220@@" > bird
+        echo "_(Is holding a key in its beak.)" > bird
         rm key
     fi
     if test $i -eq 14; then
@@ -27,9 +35,9 @@ done
 
 [win]
 
-# bisect_win_hint_264
+# _(Find the last good commit)
 test "$(git log --pretty=%s main | head -1)" -eq 11
 
 [congrats]
 
-bisect_congrats_263
+_(Well done! :) The only problem is that you now have to walk all the way back home, again...)

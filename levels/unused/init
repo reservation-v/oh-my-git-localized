@@ -1,4 +1,4 @@
-title = init_title_170
+title = _(Welcome!)
 cards = init
 
 [description]
@@ -10,5 +10,5 @@ rm -rf .git
 
 [win]
 
-# init_win_hint_171
+# _(Again, initialize your time machine!)
 test -d .git

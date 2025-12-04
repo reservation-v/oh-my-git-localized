@@ -1,26 +1,28 @@
-title = restore_title_207
+title = _(Looking into the past)
 cards = checkout-from
 
 [description]
 
-restore_description_208
+_(You've been working on your essay for a while. But you're not happy with the changes you've made recently. You want to go back to the version called "Best version"!
+
+No problem, you can use the checkout card to restore your essay from an older commit!)
 
 [setup]
 
-echo "@@setup_auto_045@@" > essay.txt
+echo "_(Initial version)" > essay.txt
 git add .
 git commit -m "Initial commit"
 
-echo "@@setup_auto_046@@" > essay.txt
+echo "_(Improved version)" > essay.txt
 git commit -a -m "Improved version"
 
-echo "@@setup_auto_047@@" > essay.txt
+echo "_(Best version)" > essay.txt
 git commit -a -m "Best version"
 
-echo "@@setup_auto_048@@" > essay.txt
+echo "_(Less-good version)" > essay.txt
 git commit -a -m "Less-good version"
 
 [win]
 
-# restore_win_hint_209
+# _(For nostalgic reasons, restore the very first backup you made!)
 diff essay.txt <(echo "Best version")

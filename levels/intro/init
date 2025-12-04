@@ -1,9 +1,13 @@
-title = init_title_121
+title = _(Enter the time machine)
 cards = init
 
 [description]
 
-init_description_122
+_(You've been accepted to time travel school! Yay! It's your first day! Your teacher explains:
+
+"To do anything with a time machine, you first need to initialize it!"
+
+Drag that blue card up to play it!)
 
 [setup]
 
@@ -11,9 +15,9 @@ rm -rf .git
 
 [win]
 
-# cli_win_hint_115
+# _(Initialize the time machine!)
 test -d .git
 
 [congrats]
 
-init_congrats_123
+_(Nice! See that little owl squirrel that appeared? It will be your companion, and always show you where you are in time!)

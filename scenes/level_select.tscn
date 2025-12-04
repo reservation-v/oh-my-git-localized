@@ -56,7 +56,7 @@ margin_bottom = 118.0
 custom_styles/hover = SubResource( 1 )
 custom_styles/focus = ExtResource( 3 )
 custom_styles/normal = ExtResource( 3 )
-text = "level_select_button3_029"
+text = "To the survey /o/"
 __meta__ = {
 "_edit_use_anchors_": false
 }

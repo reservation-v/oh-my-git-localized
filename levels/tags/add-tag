@@ -1,23 +1,31 @@
-title = addtag_title_240
+title = _(Creating tags)
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-addtag_description_241
+_(Some of your commits may be special commits. Maybe you reached a milestone or a new version number.
+
+You can mark these commits with a special flag called 'tag'.
+
+Write
+
+    git tag <tag-name>
+
+to tag your commit.)
 
 [setup]
 
-echo "@@setup_auto_131@@" > feature-list
+echo "_(event 1)" > feature-list
 
 git add .
 git commit -m "Adding feature 1"
 
-echo "@@setup_auto_132@@" >> feature-list
+echo "_(event 2)" >> feature-list
 
 git add .
 git commit -m "Adding feature 2"
 
-echo "@@setup_auto_133@@" >> feature-list
+echo "_(event 3)" >> feature-list
 
 git add .
 git commit -m "Adding feature 3"
@@ -26,7 +34,7 @@ git checkout --detach main
 
 [win]
 
-# addtaglater_win_hint_236
+# _(Did you create a new tag?)
 test "$(git tag -l | wc -l)" -ge 1
 
 [actions]
@@ -35,4 +43,4 @@ test "$(git tag -l | wc -l)" -ge 1
 
 [congrats]
 
-addtag_congrats_242
+_(Nice! You tagged your first commit :))

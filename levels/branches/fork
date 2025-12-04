@@ -1,32 +1,35 @@
-title = fork_title_103
+title = _(Make parallel commits)
 cards = checkout commit-auto
 
 [description]
 
-fork_description_104
+_(Did you know that creating parallel timelines is perfectly legal and safe? It's true!
+
+Can you find out when things went wrong in this zoo? Then, go back to the last good commit and create a parallel universe where everyone is happy!)
 
 [cli]
 
-cli_fork_010
+_(The blue animal represents a concept known as the "HEAD pointer" in Git: It shows you which commit is the current one.)
 
-cli_fork_011
+_(Here's a cool trick to go to the previous commit:)
 
-    cli_fork_012
+    _(`git checkout HEAD^`)
 
-cli_fork_013
+_(You can also go back two commits by typing, for example:)
 
-    cli_fork_014
+    _(`git checkout HEAD~2`)
 
 [setup]
 
 mkdir cage
-echo "@@setup_auto_196@@" > cage/lion
+echo "_(Looks very hungry.)" > cage/lion
 
-echo "@@setup_auto_197@@" > child
+echo "_(A small child.
+It really loves cats!)" > child
 git add .
 git commit -m "The beginning"
 
-echo "@@setup_auto_198@@" >> child
+echo "_(It's holding a lollipop.)" >> child
 git commit -am "The child buys something"
 
 mv child cage
@@ -34,11 +37,11 @@ git add .
 git commit -m "The child climbs somewhere"
 
 git rm cage/child
-echo "@@setup_auto_199@@" > cage/lion
+echo "_(Looks happy. :))" > cage/lion
 git add .
 git commit -m "Oh no"
 
-echo "@@setup_auto_200@@" > cage/lion
+echo "_(It's sleeping.)" > cage/lion
 git add .
 git commit -m "Nap time!"
 
@@ -47,12 +50,16 @@ git branch -d main
 
 [win]
 
-# fork_win_hint_106
+# _(Make sure that the child is happy.)
 git ls-tree --name-only -r HEAD | grep child
 
-# fork_win_hint_107
-git show HEAD:cage/lion | grep -v "@@setup_win_112@@"
+# _(Make sure that the lion gets something to eat.)
+git show HEAD:cage/lion | grep -v "_(very hungry)"
 
 [congrats]
 
-fork_congrats_105
+_(Whew, good job! This seems like a much better outcome.
+
+Feel free to add more parallel timelines, or make them longer.
+
+If you're ready, our next mission is already waiting...)

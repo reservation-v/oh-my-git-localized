@@ -1,33 +1,36 @@
-title = filesdelete_title_243
+title = _(Unexpected Roommates)
 cards = file-delete
 
 [description]
 
-filesdelete_description_244
+_(The first day at Time Travel School comes to an end and you receive the key to your room.
+Full of excitement you open the door just to find... spider webs! Spider webs everywhere!
+
+Remove all the spider webs you can find with the remove card!)
 
 [cli]
 
-cli_filesdelete_017
+_(On the command line, you can easily delete all files ending in -web using this command:)
 
-    cli_filesdelete_018
+    _(`rm *web`)
 
 [setup]
 
-echo @@setup_auto_222@@  > tiny_web
-echo @@setup_auto_223@@  > big_web
-echo @@setup_auto_224@@  > bed
-echo @@setup_auto_225@@  > thick_web
+echo "_(A tiny spider web is next to your window.)"  > tiny_web
+echo "_(A big spider web sticks above your bed.)"  > big_web
+echo "_(A cozy bed.)"  > bed
+echo "_(An extra thick spider web is right beside your door.)"  > thick_web
 
 [win]
 
-# filesdelete_win_hint_246
+# _(Remove all spider webs.)
 ! ls | grep thick_web &&
 ! ls | grep big_web &&
 ! ls | grep tiny_web
 
-# filesdelete_win_hint_247
+# _(But make sure you keep your bed!)
 ls | grep bed
 
 [congrats]
 
-filesdelete_congrats_245
+_(Your room looks now very tidy and cozy! Time to unpack your stuff!)

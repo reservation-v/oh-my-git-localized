@@ -1,30 +1,43 @@
-title = stashbranch_title_160
+title = _(Branch from stash)
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-stashbranch_description_161
+_(If you want to keep your changes but they don't belong to the main branch, you can easily create a new branch from your stashed changes. Just use
+
+    git stash branch <branchname> <stash>
+
+If you just want to use the latest stash entry, you can leave the <stash> option empty.
+
+Create a new branch from the stashed changes!
+
+---
+tipp1
+---
+tipp2
+---
+tipp3)
 
 [setup]
 
-echo "@@setup_auto_174@@" > recipe
+echo "_(Apple Pie:)" > recipe
 
 git add .
 git commit -m "creating a recipe"
 
-echo "@@setup_auto_175@@" >> recipe
+echo "_(- 4 Apples)" >> recipe
 
 git add .
 git commit -m "Adding ingredients"
 
-echo "@@setup_auto_176@@" >> recipe
+echo "_(- 500g Flour)" >> recipe
 git stash push
 
 git checkout main
 
 [win]
 
-# stashbranch_win_hint_163
+# _(Did you create a new branch from the stashed changes?)
 test "$(git branch --list| wc -l)" -ge 2
 
 [actions]
@@ -33,4 +46,4 @@ test "$(git branch --list| wc -l)" -ge 2
 
 [congrats]
 
-stashbranch_congrats_162
+_(Stashed changes are in a new branch! :))

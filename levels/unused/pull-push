@@ -1,23 +1,29 @@
-title = pullpush_title_193
+title = _(Helping each other)
 cards = checkout commit-auto reset-hard pull push
 
 [description]
 
-pullpush_description_194
+_(The events and timelines you see are always only what your own time machine knows about!
+
+Of course, time agents don't have to work alone! Here, your sidekick has already prepared a merge for you! You can use the "pull" card to transfer it to your own time machine.
+
+Then, add another event on top (what does Sam have for dinner?), and push the result, to transfer it back to your sidekick!
+
+You can only ever manipulate things in your own time machine (the one on the bottom).)
 
 [setup yours]
 
-echo "@@setup_auto_068@@" > sam
+echo "_(Just woke up. Is hungry.)" > sam
 git add .
 git commit -m "The beginning"
 
 git checkout -b pancakes
-echo "@@setup_auto_069@@" > sam
+echo "_(Had blueberry pancakes with maple syrup for breakfast.)" > sam
 git add .
 git commit -m "Pancakes!"
 
 git checkout -b muesli main
-echo "@@setup_auto_070@@" > sam
+echo "_(Had muesli with oats and strawberries for breakfast.)" > sam
 git add .
 git commit -m "Muesli!"
 
@@ -31,7 +37,7 @@ git checkout main
 git merge pancakes
 git merge muesli
 
-echo "@@setup_auto_071@@" > sam
+echo "_(Had pancakes with strawberries for breakfast.)" > sam
 git add .
 git commit -m "Let's make this breakfast compromise" --author="Sidekick <sidekick@example.com>"
 
@@ -42,4 +48,4 @@ git rev-parse main^^ && test "$(git rev-parse main^^1^)" = "$(git rev-parse main
 
 [congrats]
 
-pullpush_congrats_195
+_(In reality, in many cases, a lot of time agents work together to build a really good future together! :))

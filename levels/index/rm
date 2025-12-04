@@ -1,9 +1,11 @@
-title = rm_title_060
+title = _(Delete a file in the next commit)
 cards = add reset-file checkout-file rm file-delete commit
 
 [description]
 
-rm_description_061
+_(If you want to remove a file in the next commit, you can use git rm! This will both delete the file locally, and in the index.
+
+If a file is modified, you'll need to reset these changes first/reset the files.)
 
 [setup]
 
@@ -18,5 +20,5 @@ git add b
 
 [win]
 
-# rm_win_hint_062
+# _(Make a commit where all files are deleted ¯_(^^)/¯)
 test "$(git ls-tree main | wc -l)" -eq 0

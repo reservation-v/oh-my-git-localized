@@ -1,13 +1,15 @@
-title = remote_title_272
+title = _(Sandbox with a remote)
 cards = checkout commit-auto pull fetch push
 
 [description]
 
-remote_description_273
+_(Here's a sandbox with a remote! Try pulling, fetching, or pushing!
+
+How can you push tags and branches on a remote? How can you delete them again?)
 
 [setup yours]
 
-echo "@@setup_auto_157@@" > essay
+echo "_(Line 1)" > essay
 git add .
 git commit -m "Initial commit"
 
@@ -16,5 +18,5 @@ git push -u friend main
 [setup friend]
 
 git checkout main
-echo "@@setup_auto_158@@" >> essay
+echo "_(Line 2)" >> essay
 git commit -am "Another line"

@@ -123,7 +123,7 @@ margin_right = 90.0
 margin_bottom = -14.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
-text = "card_description_001"
+text = "Description"
 autowrap = true
 
 [node name="Sprite" type="Sprite" parent="."]

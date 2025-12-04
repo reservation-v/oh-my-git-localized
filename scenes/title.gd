@@ -6,11 +6,11 @@ func _ready():
 		get_tree().change_scene("res://scenes/level_select.tscn")
 	
 	
-	$Label2.text = tr("title_label2_007")
-	$Label3.text = tr("title_label3_008")
-	$VBoxContainer/Button.text = tr("title_button_009")
-	$VBoxContainer/Button3.text = tr("title_button3_010")
-	$VBoxContainer/Button2.text = tr("title_button2_011")
+	$Label2.text = tr("by bleeptrack & blinry")
+	$Label3.text = tr("Original score by winniehell")
+	$VBoxContainer/Button.text = tr("Levels")
+	$VBoxContainer/Button3.text = tr("Sandbox")
+	$VBoxContainer/Button2.text = tr("Quit")
 
 
 func quit():

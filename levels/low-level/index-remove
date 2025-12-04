@@ -1,19 +1,23 @@
 [description]
 
-indexremove_description_277
+_(To remove an entry from the index, use a command like this:
+
+    git update-index --force-remove <file>
+
+Remove all entries from the index!)
 
 [setup]
 
-echo "@@setup_auto_079@@" > file1
-echo "@@setup_auto_080@@" > file2
-echo "@@setup_auto_081@@" > file3
+echo "_(file 1)" > file1
+echo "_(file 2)" > file2
+echo "_(file 3)" > file3
 git add .
 
 [setup goal]
 
-echo "@@setup_auto_082@@" > file1
-echo "@@setup_auto_083@@" > file2
-echo "@@setup_auto_084@@" > file3
+echo "_(file 1)" > file1
+echo "_(file 2)" > file2
+echo "_(file 3)" > file3
 git add .
 
 git update-index --force-remove file1

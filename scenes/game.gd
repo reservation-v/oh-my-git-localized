@@ -211,7 +211,7 @@ func _set_initial_language():
 	if system_language in available_languages:
 		current_language = system_language
 	else:
-		current_language = "en"
+		current_language = "English"
 		
 	TranslationServer.set_locale(current_language)
 	

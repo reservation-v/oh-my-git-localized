@@ -29,7 +29,7 @@ margin_right = 151.0
 margin_bottom = 39.0
 focus_mode = 0
 enabled_focus_mode = 0
-text = "main_backbutton_016"
+text = "Back"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -40,7 +40,7 @@ margin_right = 329.0
 margin_bottom = 39.0
 focus_mode = 0
 enabled_focus_mode = 0
-text = "main_reloadbutton2_017"
+text = "Reload"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -52,7 +52,7 @@ margin_right = 493.0
 margin_bottom = 39.0
 focus_mode = 0
 enabled_focus_mode = 0
-text = "main_cardsbutton_018"
+text = "Cards!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -64,7 +64,7 @@ margin_right = 434.0
 margin_bottom = 39.0
 focus_mode = 0
 enabled_focus_mode = 0
-text = "main_tip_019"
+text = "Tip!"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -90,7 +90,7 @@ focus_mode = 0
 custom_styles/hover = SubResource( 2 )
 custom_styles/normal = ExtResource( 5 )
 enabled_focus_mode = 0
-text = "main_nextlevelbutton_020"
+text = "Next level"
 __meta__ = {
 "_edit_use_anchors_": false
 }

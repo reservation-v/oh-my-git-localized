@@ -1,23 +1,27 @@
-title = filesmove_title_179
+title = _(No sleep required)
 cards = file-new file-delete file-rename
 
 [description]
 
-filesmove_description_180
+_(Actually, you decide that you don't need any sleep.
+
+Because of that, you won't require a bed, and can build some other piece of furniture from the wood!)
 
 
 [setup]
 
-echo @@setup_auto_054@@  > cupboard
-echo @@setup_auto_055@@  > shelf
-echo @@setup_auto_056@@  > bed
+echo "_(A yellow cupboard with lots of drawers.)"  > cupboard
+echo "_(A really big yellow shelf.)"  > shelf
+echo "_(A comfortable, yellow bed with yellow cushions.)"  > bed
 
 [win]
 
-# filesmove_win_hint_182
+# _(Rename the bed into something else, and give it a new description!)
 NUM_FILES="$(ls | wc -l)"
 ! test -f bed && test "$NUM_FILES" -ge 3 && ! grep -r "yellow bed" .
 
 [congrats]
 
-filesmove_congrats_181
+_(Neat! It even still looks a bit comfortable!
+
+You head out, eager for your first lesson at time travel school!)

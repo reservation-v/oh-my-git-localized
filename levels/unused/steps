@@ -1,19 +1,21 @@
-title = steps_title_174
+title = _(One step after another)
 cards = checkout commit reset-hard add
 
 [description]
 
-steps_description_175
+_(Sometimes, you might want to record the order in which things changed, instead of making a single commit.
+
+What happened here? Make two commits from the changes (using the "add" card), in an order that makes sense!)
 
 [setup]
 
-echo @@setup_auto_057@@  > file1
-echo @@setup_auto_058@@  > file2
+echo "_(something)"  > file1
+echo "_(something else)"  > file2
 git add .
 git commit -m "Initial commit"
 
-echo @@setup_auto_059@@  >> file1
-echo @@setup_auto_060@@  >> file2
+echo "_(this should happen first)"  >> file1
+echo "_(and this should happen after that)"  >> file2
 
 [win]
 

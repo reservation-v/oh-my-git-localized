@@ -1,15 +1,17 @@
-title = whoareyou_title_116
+title = _(Welcome to time travel school!)
 cards = config-name commit-auto checkout
 
 [description]
 
-whoareyou_description_117
+_(You're still pretty confused by everything that's going on. The next day, you decide to enroll in time travel school!
+
+Your time travel teacher welcomes you: "Hello there! Wanna tell us your name?")
 
 [setup]
 
 git config --global user.name "You"
 
-echo @@setup_auto_020@@ 
+echo "_(\"~ Why do you want to learn how to use time machines? ~\")" 
 
 [ ] To make sure that my cat doesn't eat my homework.
 [ ] So I don't have to keep copies of all my essays.
@@ -23,12 +25,14 @@ Signature: $(git config user.name)" >> form
 
 [win]
 
-# whoareyou_win_hint_119
+# _(Introduce yourself.)
 test "$(git config user.name)" != "You"
 
-# whoareyou_win_hint_120
+# _(Fill out the enrollment form, and commit it!)
 git show main:form | grep '\[[xX]\]'
 
 [congrats]
 
-whoareyou_congrats_118
+_(We're so glad to have you!
+
+Git can help you fix problems in the past! It allows you to collaborate with other students of time travel! It's really powerful, and it's really popular! I'll see you for your first lesson tomorrow!)

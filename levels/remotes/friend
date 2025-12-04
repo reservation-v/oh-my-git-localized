@@ -1,13 +1,15 @@
-title = friend_title_309
+title = _(Friend)
 cards = pull push commit-auto checkout
 
 [description]
 
-friend_description_310
+_(Your friend added another line to your essay! Get it, add a third one and send it to them!
+
+Take turns until you have five lines!)
 
 [setup yours]
 
-echo "@@setup_auto_226@@" > essay
+echo "_(Line 1)" > essay
 git add .
 git commit -m "One line"
 
@@ -16,7 +18,7 @@ git push -u friend main
 [setup friend]
 
 git checkout main
-echo "@@setup_auto_227@@" >> essay
+echo "_(Line 2, gnihihi)" >> essay
 git commit -am "Another line"
 
 [actions friend]
@@ -30,16 +32,16 @@ fi
 
 [win]
 
-# friend_win_hint_311
+# _(Got the second line from your friend)
 git show HEAD:essay | grep gnihihi
 
-# friend_win_hint_312
+# _(Got the fourth line from your friend)
 git show HEAD:essay | grep blurbblubb
 
 [win friend]
 
-# friend_win_hint_313
+# _(The friend got a third line from you)
 test "$(git show HEAD:essay | wc -l)" -ge 3
 
-# friend_win_hint_314
+# _(The friend got a fifth line from you)
 test "$(git show HEAD:essay | wc -l)" -ge 5
