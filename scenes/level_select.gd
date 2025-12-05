@@ -26,8 +26,7 @@ func reload():
 		var level_id = 0
 		
 		var l = Label.new()
-		var chapter_key = "chapter_" + chapter.slug 
-		l.text = tr(chapter_key)
+		l.text = tr(chapter.slug)
 		l.set("custom_fonts/font", preload("res://fonts/big.tres"))
 		l.align = HALIGN_CENTER
 		level_list.add_child(l)

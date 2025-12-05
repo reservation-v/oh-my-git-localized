@@ -3,7 +3,7 @@ cards = add commit
 
 [description]
 
-_(When we change files, the index won't change on its own. We have to use git add to update the index to the changed version of the file.
+_(When we change files, the index won't change on its own. We have to use `git add` to update the index to the changed version of the file.
 
 Let's try that!
 

@@ -19,22 +19,12 @@ func load(path):
 	if dir.file_exists(path):
 		var config = helpers.parse(path)
 		
-		title = tr(config.get("title", "default_title_key"))
-		var description_text = tr(config.get("description", "default_description_key"))
-		congrats = tr(config.get("congrats", "Good job, you solved the level!\n\nFeel free to try a few more things or click 'Next level'."))
+		title = translate_string(config.get("title", slug))
+		var description_text = translate_string(config.get("description", "_((no description))"))
+		congrats = translate_string(config.get("congrats", "_(Good job, you solved the level!\n\nFeel free to try a few more things or click 'Next level'.)"))
 
-		var cli_hints_keys_block = config.get("cli", "")
-		var translated_cli_lines = []
-		
-		if cli_hints_keys_block != "":
-			for key in cli_hints_keys_block.split("\n"):
-				var stripped_key = key.strip_edges(true, true)
-				if stripped_key != "":
-					translated_cli_lines.push_back(tr(stripped_key))
-				else:
-					translated_cli_lines.push_back("")
-		
-		var cli_hints_text = PoolStringArray(translated_cli_lines).join("\n")
+		var cli_hints = translate_string(config.get("cli", ""))
+
 		var monospace_regex = RegEx.new()
 		monospace_regex.compile("\\n    ([^\\n]*)")
 		var monospace_inline_regex = RegEx.new()
@@ -48,11 +38,11 @@ func load(path):
 		
 		description = description_text.split("---")
 		
-		if cli_hints_text != null and cli_hints_text != "":
-			cli_hints_text = monospace_regex.sub(cli_hints_text, "\n      [code][color=#bbbb5d]$1[/color][/code]", true)
-			cli_hints_text = monospace_inline_regex.sub(cli_hints_text, "[code][color=#bbbb5d]$1[/color][/code]", true)
+		if cli_hints != null and cli_hints != "":
+			cli_hints = monospace_regex.sub(cli_hints, "\n      [code][color=#bbbb5d]$1[/color][/code]", true)
+			cli_hints = monospace_inline_regex.sub(cli_hints, "[code][color=#bbbb5d]$1[/color][/code]", true)
 			if description.size() > 0:
-				description[0] = description[0] + "\n\n[color=#787878]"+cli_hints_text+"[/color]"
+				description[0] = description[0] + "\n\n[color=#787878]"+cli_hints+"[/color]"
 				
 		cards = Array(config.get("cards", "").split(" "))
 		if cards == [""]:
@@ -80,7 +70,7 @@ func load(path):
 				repo = "yours"
 			if not repos.has(repo):
 				repos[repo] = LevelRepo.new()
-			repos[repo].setup_commands = config[k]
+			repos[repo].setup_commands = translate_string(config[k])
 		
 		for k in repo_wins:
 			var repo
@@ -92,15 +82,16 @@ func load(path):
 			if not repos.has(repo):
 				repos[repo] = LevelRepo.new()
 			
-			var desc = tr(config.get("win_desc", "Complete the goal of this level"))
+			var desc = translate_string(config.get("win_desc", "Complete the goal of this level"))
 			for line in Array(config[k].split("\n")):
 				if line.length() > 0 and line[0] == "#":
 					var hint_key = line.substr(1).strip_edges(true, true)
-					desc = tr(hint_key)
+					desc = translate_string(hint_key)
 				else:
+					var translated_line = translate_string(line)
 					if not repos[repo].win_conditions.has(desc):
 						repos[repo].win_conditions[desc] = ""
-					repos[repo].win_conditions[desc] += line+"\n"
+					repos[repo].win_conditions[desc] += translated_line+"\n"
 					
 		for k in repo_actions:
 			var repo
@@ -109,7 +100,7 @@ func load(path):
 			else:
 				repo = "yours"
 			
-			repos[repo].action_commands = config[k]
+			repos[repo].action_commands = translate_string(config[k])
 				
 	else:
 		helpers.crash("Level %s does not exist." % path)
@@ -155,3 +146,52 @@ func check_win():
 				var won = game.global_shell.run("function win { %s\n}; win 2>/dev/null >/dev/null && echo yes || echo no" % commands) == "yes\n"
 				win_states[description] = won		
 	return win_states 
+
+func translate_string(text):
+	if typeof(text) != TYPE_STRING:
+		return text
+	
+	var result = ""
+	var i = 0
+	var length = text.length()
+	
+	while i < length:
+		if text.substr(i, 2) == "_(":
+			var content_start = i + 2
+			var current = content_start
+			var depth = 1
+			var found_end = false
+			
+			while current < length:
+				var char_at = text[current]
+				
+				if char_at == "\\":
+					current += 2
+					continue
+				
+				if char_at == "(":
+					depth += 1
+				elif char_at == ")":
+					depth -= 1
+					
+				if depth == 0:
+					found_end = true
+					break
+				
+				current += 1
+			
+			if found_end:
+				var key = text.substr(content_start, current - content_start)
+				
+				key = key.replace("\\)", ")").replace("\\(", "(")
+				
+				result += tr(key)
+				i = current + 1
+			else:
+				result += text[i]
+				i += 1
+		else:
+			result += text[i]
+			i += 1
+			
+	return result

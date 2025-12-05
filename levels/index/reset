@@ -9,7 +9,7 @@ For example, these candles have been blown out, and that change has been added.
 
 But you decide that this was a mistake! You only want to blow out the red candle in the next commit!
 
-If you already have updated the index to a changed file, but want to reset it, you can use git reset!)
+If you already have updated the index to a changed file, but want to reset it, you can use `git reset`!)
 
 [setup]
 

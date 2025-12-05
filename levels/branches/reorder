@@ -7,11 +7,11 @@ _(One of your colleagues messed up here, and put the branches in the wrong timel
 
 You could delete and re-create these branches - but you can also directly move them to different commits, by using
 
-    `git checkout`
+    git checkout
 
 on the branch names, and then using
 
-    `git reset --hard`
+    git reset --hard
 
 on the commit where you want the branch to be.
 

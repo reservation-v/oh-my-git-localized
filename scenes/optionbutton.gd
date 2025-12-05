@@ -27,4 +27,3 @@ func _on_language_selected(index: int):
 
 func _get_language_name(locale: String) -> String:
 	return tr(locale)
-
