@@ -14,7 +14,7 @@ export var show_cli_badge = true
 func _ready():
 	$NextLevelButton.visible = show_next_level_button
 	$CLIBadge.visible = show_cli_badge
-	
+
 	$BackButton.text = tr("Back")
 	$ReloadButton2.text = tr("Reload")
 	$CardsButton.text = tr("Cards!")

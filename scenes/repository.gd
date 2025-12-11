@@ -90,7 +90,7 @@ func set_label(new_label):
 			$Rows/RepoVis/SeparatorLine.hide()
 		else:
 			game.notify(tr("This is the time machine of another person! To interact with it, you need special commands!"), self, "remote")
-		label_node.text = new_label
+		label_node.text = tr(new_label)
 
 func random_position():
 	return Vector2(rand_range(0, rect_size.x), rand_range(0, rect_size.y))

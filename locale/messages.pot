@@ -334,6 +334,15 @@ msgstr ""
 msgid "Complete the goal of this level"
 msgstr ""
 
+msgid "teacher"
+msgstr ""
+
+msgid "friend"
+msgstr ""
+
+msgid "team"
+msgstr ""
+
 msgid ""
 "Construct a chain of three trees, which don't point to anything else.\n"
 "\n"

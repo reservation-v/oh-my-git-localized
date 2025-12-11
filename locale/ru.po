@@ -676,6 +676,15 @@ msgstr ""
 "\n"
 "Можешь ещё поэкспериментировать или нажми 'Следующий уровень'."
 
+msgid "teacher"
+msgstr "Учитель"
+
+msgid "friend"
+msgstr "Друг"
+
+msgid "team"
+msgstr "Команда"
+
 msgid "(no description)"
 msgstr "(нет описания)"
 

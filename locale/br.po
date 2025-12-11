@@ -21,6 +21,15 @@ msgid ""
 "After you've found the last good commit, reset the main branch to it. What happened to the key after you lost it?"
 msgstr "TRANSLATED"
 
+msgid "teacher"
+msgstr "TRANSLATED"
+
+msgid "friend"
+msgstr "TRANSLATED"
+
+msgid "team"
+msgstr "TRANSLATED"
+
 msgid "(no description)"
 msgstr "TRANSLATED"
 

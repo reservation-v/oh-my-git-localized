@@ -42,3 +42,12 @@ msgstr "Tags"
 
 msgid "sandbox"
 msgstr "Sandbox"
+
+msgid "teacher"
+msgstr "Teacher"
+
+msgid "friend"
+msgstr "Friend"
+
+msgid "team"
+msgstr "Team"
