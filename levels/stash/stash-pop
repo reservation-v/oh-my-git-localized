@@ -44,4 +44,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-_(Yay, you got your changes back! :))
+_(Yay, you got your changes back! :\))

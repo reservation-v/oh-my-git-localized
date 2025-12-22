@@ -24,6 +24,9 @@ msgstr "TRANSLATED"
 msgid "teacher"
 msgstr "TRANSLATED"
 
+msgid "yellow"
+msgstr "TRANSLATED"
+
 msgid "friend"
 msgstr "TRANSLATED"
 
@@ -737,9 +740,6 @@ msgid "In the last main commit, the numbers file contains the numbers from 1 to 
 msgstr "TRANSLATED"
 
 msgid "Index:"
-msgstr "TRANSLATED"
-
-msgid "Initial version"
 msgstr "TRANSLATED"
 
 msgid "Initialize the time machine!"

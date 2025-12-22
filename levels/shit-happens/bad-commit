@@ -28,4 +28,4 @@ test "$(git show main:numbers)" = "1 2 3 4 5 6 7 8 9 10"
 # _(The commit message of that commit is "More numbers".)
 git log -1 --oneline | grep "More numbers"
 # _(The commit with the typo is not part of the main branch anymore.)
-git log --oneline | grep -v "rrrrr"
+! git log --oneline | grep "rrrrr"

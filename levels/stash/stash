@@ -39,4 +39,4 @@ test "$(git stash list | wc -l)" -ge 1
 
 [congrats]
 
-_(Nice stash you got there! :))
+_(Nice stash you got there! :\))

@@ -19,4 +19,4 @@ rm essay
 [win]
 
 # _(Restore the essay to contain "important content")
-test "$(cat essay)" = "important content"
+test "$(cat essay)" = "_(important content)"

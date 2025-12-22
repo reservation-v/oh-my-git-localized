@@ -46,4 +46,4 @@ test "$(git branch --list| wc -l)" -ge 2
 
 [congrats]
 
-_(Stashed changes are in a new branch! :))
+_(Stashed changes are in a new branch! :\))

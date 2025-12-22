@@ -37,7 +37,7 @@ git add .
 git commit -m "The child climbs somewhere"
 
 git rm cage/child
-echo "_(Looks happy. :))" > cage/lion
+echo "_(Looks happy. :\))" > cage/lion
 git add .
 git commit -m "Oh no"
 
@@ -53,7 +53,7 @@ git branch -d main
 # _(Make sure that the child is happy.)
 git ls-tree --name-only -r HEAD | grep child
 
-# _(Make sure that the lion gets something to eat.)
+	# _(Make sure that the lion gets something to eat.)
 git show HEAD:cage/lion | grep -v "_(very hungry)"
 
 [congrats]

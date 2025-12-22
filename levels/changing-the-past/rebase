@@ -77,7 +77,7 @@ git checkout --detach main
 [win]
 
 # _(Order all tree branches into one and move the main branch ref)
-{ git show main:you | grep "You ate.*baguette"; } && { git show main:you | grep "You drank.*coffee"; } && { git show main:you | grep "You ate.*donut"; } && { test "$(git log main --oneline | wc -l)" -eq 7; }
+{ git show main:you | grep "_(You ate.*baguette)"; } && { git show main:you | grep "_(You drank.*coffee)"; } && { git show main:you | grep "_(You ate.*donut)"; } && { test "$(git log main --oneline | wc -l)" -eq 7; }
 
 [congrats]
 

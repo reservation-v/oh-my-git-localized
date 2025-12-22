@@ -43,4 +43,4 @@ test "$(git tag -l | wc -l)" -ge 1
 
 [congrats]
 
-_(Nice! You tagged your first commit :))
+_(Nice! You tagged your first commit :\))

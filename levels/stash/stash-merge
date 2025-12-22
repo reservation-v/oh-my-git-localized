@@ -41,7 +41,7 @@ git add recipe
 [win]
 
 # _(Did you resolve the conflict and commit?)
-{ git show HEAD | grep "Flour"; } && { git show HEAD | grep "Salt"; }
+{ git show HEAD | grep "_(Flour)"; } && { git show HEAD | grep "_(Salt)"; }
 
 # _(Did you clear stash stack?)
 test "$(git stash list | wc -l)" -eq 0
@@ -52,4 +52,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-_(Yay, you got your changes back! :))
+_(Yay, you got your changes back! :\))

@@ -76,13 +76,13 @@ git checkout --detach main
 [win]
 
 # _(Did you eat a baguette on the baguette branch?)
-git show baguette:you | grep "You ate.*baguette"
+git show baguette:you | grep "_(You ate.*baguette)"
 
 # _(Did you drink a coffee on the coffee branch?)
-git show coffee:you | grep "You drank.*coffee"
+git show coffee:you | grep "_(You drank.*coffee)"
 
 # _(Did you eat a donut on the donut branch?)
-git show donut:you | grep "You ate.*donut"
+git show donut:you | grep "_(You ate.*donut)"
 
 [actions]
 

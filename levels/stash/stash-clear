@@ -58,4 +58,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-_(All clear! :))
+_(All clear! :\))

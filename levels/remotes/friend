@@ -25,18 +25,18 @@ git commit -am "Another line"
 
 if test "$(git log --oneline | wc -l)" -eq 3; then
     git reset --hard main # Necessary because the working directory isn't updated when we push to the friend.
-    echo "Line 4, blurbblubb" >> essay
+    echo "_(Line 4, blurbblubb)" >> essay
     git commit -am "Final line"
-    hint "Oh nice, I added a fourth line!"
+    hint "_(Oh nice, I added a fourth line!)"
 fi
 
 [win]
 
 # _(Got the second line from your friend)
-git show HEAD:essay | grep gnihihi
+git show HEAD:essay | grep _(gnihihi)
 
 # _(Got the fourth line from your friend)
-git show HEAD:essay | grep blurbblubb
+git show HEAD:essay | grep _(blurbblubb)
 
 [win friend]
 

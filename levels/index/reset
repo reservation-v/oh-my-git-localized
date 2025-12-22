@@ -27,11 +27,11 @@ git add .
 [win]
 
 # _(Reset the changes in the green and blue candles!)
-git show :green_candle | grep burning &&
-git show :blue_candle | grep burning &&
-git show :red_candle | grep -v burning
+git show :green_candle | grep _(burning) &&
+git show :blue_candle | grep _(burning) &&
+git show :red_candle | grep -v _(burning)
 
 # _(And make a commit!)
-git show main:green_candle | grep burning &&
-git show main:blue_candle | grep burning &&
-git show main:red_candle | grep -v burning
+git show main:green_candle | grep _(burning) &&
+git show main:blue_candle | grep _(burning) &&
+git show main:red_candle | grep -v _(burning)

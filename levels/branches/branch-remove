@@ -44,4 +44,4 @@ test "$(git show-ref --heads | cut -f2 -d' ')" = "$(echo refs/heads/leap)"
 
 [congrats]
 
-_(On second thought, maybe you even prefer the ice cream timeline to the main one? :))
+_(On second thought, maybe you even prefer the ice cream timeline to the main one? :\))

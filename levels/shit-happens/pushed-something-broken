@@ -49,6 +49,6 @@ git branch -u team/main main
 [win team]
 
 # _(The team's main branch no longer contains the bad thing.)
-! { git show main:text | grep -q "very bad"; }
+! { git show main:text | grep -q "_(very bad)"; }
 # _(And the history has not been modified.)
-git show main^:text | grep -q "very bad"
+git show main^:text | grep -q "_(very bad)"

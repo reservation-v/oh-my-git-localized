@@ -38,6 +38,48 @@ msgstr ""
 msgid "- 200g Sugar"
 msgstr "- 200г сахара"
 
+msgid "Flour"
+msgstr "муки"
+
+msgid "Salt"
+msgstr "соли"
+
+msgid "burning"
+msgstr "горит"
+
+msgid "very bad"
+msgstr "очень плохо"
+
+msgid "important content"
+msgstr "важное содержимое"
+
+msgid "yellow"
+msgstr "Желтая"
+
+msgid "gnihihi"
+msgstr "хихихи"
+
+msgid "Line 4, blurbblubb"
+msgstr "Строка 4, брбрбрбрбр"
+
+msgid "Oh nice, I added a fourth line!"
+msgstr "О, здорово, я добавил четвёртую строку!"
+
+msgid "blurbblubb"
+msgstr "брбрбрбрбр"
+
+msgid "You ate.*baguette"
+msgstr "Вы съели.*багет"
+
+msgid "You drank.*coffee"
+msgstr "Вы выпили.*кофе"
+
+msgid "You ate.*donut"
+msgstr "Вы съели.*пончик"
+
+msgid "10 coins"
+msgstr "10 монет"
+
 msgid "- 4 Apples"
 msgstr "- 4 яблока"
 
@@ -673,15 +715,6 @@ msgstr "Brazil"
 msgid "en"
 msgstr "English"
 
-msgid "teacher"
-msgstr "Учитель"
-
-msgid "friend"
-msgstr "Друг"
-
-msgid "team"
-msgstr "Команда"
-
 msgid "(no description)"
 msgstr "(нет описания)"
 
@@ -907,9 +940,6 @@ msgstr "В последнем коммите ветки main файл numbers с
 
 msgid "Index:"
 msgstr "Индекс:"
-
-msgid "Initial version"
-msgstr "Начальная версия"
 
 msgid "Initialize the time machine!"
 msgstr "Инициализируйте машину времени!"
@@ -1282,7 +1312,7 @@ msgstr ""
 "Теперь, когда ваша комната выглядит опрятно, вы можете начать распаковывать свои вещи. Вы привезли с собой два новых предмета мебели и с яркой улыбкой\n"
 "замечаете, что их цвета совпадают с цветом вашей кровати!\n"
 "\n"
-"Соберите свои два предмета мебели, сыграв карту касания.\n"
+"Соберите свои два предмета мебели, сыграв карту touch.\n"
 "Затем назовите свою мебель - вы можете выбрать любое название.\n"
 "\n"
 "Убедитесь, что цвета совпадают! Цвет кровати вы можете найти в ее описании.\n"
@@ -1861,7 +1891,7 @@ msgid "The command line"
 msgstr "Командная строка"
 
 msgid "The commit message of that commit is \"More numbers\"."
-msgstr "Сообщение этого коммита — \"Больше чисел\"."
+msgstr "Сообщение этого коммита — \"More numbers\"."
 
 msgid "The commit with the typo is not part of the main branch anymore."
 msgstr "Коммит с опечаткой больше не является частью основной ветки."

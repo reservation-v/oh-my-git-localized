@@ -40,4 +40,4 @@ test "$(git log --pretty=%s main | head -1)" -eq 11
 
 [congrats]
 
-_(Well done! :) The only problem is that you now have to walk all the way back home, again...)
+_(Well done! :\) The only problem is that you now have to walk all the way back home, again...)

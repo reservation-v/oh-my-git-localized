@@ -29,6 +29,42 @@ msgid ""
 "After you've found the last good commit, reset the main branch to it. What happened to the key after you lost it?"
 msgstr ""
 
+msgid "yellow"
+msgstr ""
+
+msgid "very bad"
+msgstr ""
+
+msgid "Flour"
+msgstr ""
+
+msgid "Salt"
+msgstr ""
+
+msgid "burning"
+msgstr ""
+
+msgid "important content"
+msgstr ""
+
+msgid "gnihihi"
+msgstr ""
+
+msgid "blurbblubb"
+msgstr ""
+
+msgid "You ate.*baguette"
+msgstr ""
+
+msgid "You drank.*coffee"
+msgstr ""
+
+msgid "You ate.*donut"
+msgstr ""
+
+msgid "10 coins"
+msgstr ""
+
 msgid "(no description)"
 msgstr ""
 
@@ -335,15 +371,6 @@ msgid "Commit your result."
 msgstr ""
 
 msgid "Complete the goal of this level"
-msgstr ""
-
-msgid "teacher"
-msgstr ""
-
-msgid "friend"
-msgstr ""
-
-msgid "team"
 msgstr ""
 
 msgid ""
@@ -739,9 +766,6 @@ msgid "In the last main commit, the numbers file contains the numbers from 1 to 
 msgstr ""
 
 msgid "Index:"
-msgstr ""
-
-msgid "Initial version"
 msgstr ""
 
 msgid "Initialize the time machine!"

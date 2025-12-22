@@ -9,7 +9,7 @@ No problem, you can use the checkout card to restore your essay from an older co
 
 [setup]
 
-echo "_(Initial version)" > essay.txt
+echo "Initial version" > essay.txt
 git add .
 git commit -m "Initial commit"
 

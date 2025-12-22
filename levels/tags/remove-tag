@@ -50,4 +50,4 @@ test "$(git tag -l | wc -l)" -eq 0
 
 [congrats]
 
-_(Well done :))
+_(Well done :\))

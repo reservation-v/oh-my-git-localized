@@ -13,7 +13,7 @@ _(To go back to old commands, you can press arrow up and down. That way, you don
 
 [congrats]
 
-_(Welcome to time travel school! :) I'll see you for your first class tomorrow!)
+_(Welcome to time travel school! :\) I'll see you for your first class tomorrow!)
 
 [setup]
 
@@ -28,7 +28,8 @@ git update-ref -d refs/remotes/teacher/main
 
 git reset --hard main
 
-echo "_(- Sam
+echo "_(
+- Sam
 - Alex)" >> students
 
 git add .
