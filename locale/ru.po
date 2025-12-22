@@ -54,12 +54,6 @@ msgstr ""
 "- Сэм\n"
 "- Алекс"
 
-msgid "2 + 3 ="
-msgstr "2 + 3 ="
-
-msgid "3"
-msgstr "3"
-
 msgid "A big spider web sticks above your bed."
 msgstr "Большая паутина висит над вашей кроватью."
 
@@ -340,9 +334,6 @@ msgstr "Ветки также значительно упрощают перем
 msgid "Branches grow with you!"
 msgstr "Ветки растут вместе с вами!"
 
-msgid "Brazil"
-msgstr "Brazil"
-
 msgid "Build a situation where you consumed a baguette, a coffee, and a donut."
 msgstr "Создайте ситуацию, в которой вы съели багет, выпили кофе и съели пончик."
 
@@ -561,9 +552,6 @@ msgstr "Взять новые карты"
 msgid "Empty sandbox"
 msgstr "Пустая песочница"
 
-msgid "English"
-msgstr "English"
-
 msgid "Enter the time machine"
 msgstr "Войдите в машину времени"
 
@@ -675,6 +663,15 @@ msgstr ""
 "Отличная работа, уровень пройден!\n"
 "\n"
 "Можешь ещё поэкспериментировать или нажми 'Следующий уровень'."
+
+msgid "ru"
+msgstr "Русский"
+
+msgid "br"
+msgstr "Brazil"
+
+msgid "en"
+msgstr "English"
 
 msgid "teacher"
 msgstr "Учитель"
@@ -1369,8 +1366,14 @@ msgstr ""
 msgid "On second thought, maybe you even prefer the ice cream timeline to the main one? :)"
 msgstr "Хотя, если подумать, может быть, вы даже предпочитаете временную линию с мороженым основной? :)"
 
-msgid "On the command line, you can easily delete all files ending in -web using this command:"
-msgstr "В командной строке вы можете легко удалить все файлы, заканчивающиеся на -web, с помощью этой команды:"
+msgid ""
+"On the command line, you can easily delete all files ending in -web using this command:\n"
+"\n"
+"    rm *web"
+msgstr ""
+"В командной строке вы можете легко удалить все файлы, заканчивающиеся на -web, используя эту команду:\n"
+"\n"
+"    rm *web"
 
 msgid ""
 "One of your colleagues messed up here, and put the branches in the wrong timelines!\n"
@@ -2789,12 +2792,6 @@ msgstr "`git checkout HEAD^`"
 msgid "`git checkout HEAD~2`"
 msgstr "`git checkout HEAD~2`"
 
-msgid "`rm *web`"
-msgstr "`rm *web`"
-
-msgid "ae ie"
-msgstr "ae ie"
-
 msgid "and this should happen after that"
 msgstr "а это должно произойти после"
 
@@ -2867,9 +2864,6 @@ msgstr "новое содержимое"
 
 msgid "object_id"
 msgstr "id_объекта"
-
-msgid "ppl p"
-msgstr "ppl p"
 
 msgid "root"
 msgstr "корень"

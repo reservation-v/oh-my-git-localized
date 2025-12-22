@@ -10,9 +10,9 @@ Remove all the spider webs you can find with the remove card!)
 
 [cli]
 
-_(On the command line, you can easily delete all files ending in -web using this command:)
+_(On the command line, you can easily delete all files ending in -web using this command:
 
-    _(`rm *web`)
+    rm *web)
 
 [setup]
 

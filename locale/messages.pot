@@ -5,6 +5,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "ru"
+msgstr ""
+
+msgid "br"
+msgstr ""
+
+msgid "en"
+msgstr ""
+
 msgid "\"~ Why do you want to learn how to use time machines? ~\""
 msgstr ""
 
@@ -38,12 +47,6 @@ msgstr ""
 msgid ""
 "- Sam\n"
 "- Alex"
-msgstr ""
-
-msgid "2 + 3 ="
-msgstr ""
-
-msgid "3"
 msgstr ""
 
 msgid "A big spider web sticks above your bed."
@@ -476,9 +479,6 @@ msgid "Draw new cards"
 msgstr ""
 
 msgid "Empty sandbox"
-msgstr ""
-
-msgid "English"
 msgstr ""
 
 msgid "Enter the time machine"
@@ -1102,7 +1102,10 @@ msgstr ""
 msgid "On second thought, maybe you even prefer the ice cream timeline to the main one? :)"
 msgstr ""
 
-msgid "On the command line, you can easily delete all files ending in -web using this command:"
+msgid ""
+"On the command line, you can easily delete all files ending in -web using this command:\n"
+"\n"
+"    rm *web"
 msgstr ""
 
 msgid ""
@@ -1784,7 +1787,6 @@ msgid ""
 "---\n"
 "tipp3"
 msgstr ""
-msgstr ""
 
 msgid ""
 "When you want to re-apply your changes but you already continued working on your file, you might get a merge conflict! Let's practice this situation.\n"
@@ -2138,12 +2140,6 @@ msgstr ""
 msgid "`git checkout HEAD~2`"
 msgstr ""
 
-msgid "`rm *web`"
-msgstr ""
-
-msgid "ae ie"
-msgstr ""
-
 msgid "and this should happen after that"
 msgstr ""
 
@@ -2213,9 +2209,6 @@ msgid "new content"
 msgstr ""
 
 msgid "object_id"
-msgstr ""
-
-msgid "ppl p"
 msgstr ""
 
 msgid "root"

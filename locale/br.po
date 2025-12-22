@@ -27,6 +27,15 @@ msgstr "TRANSLATED"
 msgid "friend"
 msgstr "TRANSLATED"
 
+msgid "ru"
+msgstr "Русский"
+
+msgid "br"
+msgstr "Brazil"
+
+msgid "en"
+msgstr "English"
+
 msgid "team"
 msgstr "TRANSLATED"
 
@@ -48,12 +57,6 @@ msgstr "TRANSLATED"
 msgid ""
 "- Sam\n"
 "- Alex"
-msgstr "TRANSLATED"
-
-msgid "2 + 3 ="
-msgstr "TRANSLATED"
-
-msgid "3"
 msgstr "TRANSLATED"
 
 msgid "A big spider web sticks above your bed."
@@ -286,9 +289,6 @@ msgstr "TRANSLATED"
 msgid "Branches grow with you!"
 msgstr "TRANSLATED"
 
-msgid "Brazil"
-msgstr "Brazil"
-
 msgid "Build a situation where you consumed a baguette, a coffee, and a donut."
 msgstr "TRANSLATED"
 
@@ -478,9 +478,6 @@ msgstr "TRANSLATED"
 
 msgid "Empty sandbox"
 msgstr "TRANSLATED"
-
-msgid "English"
-msgstr "English"
 
 msgid "Enter the time machine"
 msgstr "TRANSLATED"
@@ -1103,7 +1100,10 @@ msgstr "TRANSLATED"
 msgid "On second thought, maybe you even prefer the ice cream timeline to the main one? :)"
 msgstr "TRANSLATED"
 
-msgid "On the command line, you can easily delete all files ending in -web using this command:"
+msgid ""
+"On the command line, you can easily delete all files ending in -web using this command:\n"
+"\n"
+"    rm *web"
 msgstr "TRANSLATED"
 
 msgid ""
@@ -2138,12 +2138,6 @@ msgstr "TRANSLATED"
 msgid "`git checkout HEAD~2`"
 msgstr "TRANSLATED"
 
-msgid "`rm *web`"
-msgstr "TRANSLATED"
-
-msgid "ae ie"
-msgstr "TRANSLATED"
-
 msgid "and this should happen after that"
 msgstr "TRANSLATED"
 
@@ -2213,9 +2207,6 @@ msgid "new content"
 msgstr "TRANSLATED"
 
 msgid "object_id"
-msgstr "TRANSLATED"
-
-msgid "ppl p"
 msgstr "TRANSLATED"
 
 msgid "root"

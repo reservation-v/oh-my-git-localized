@@ -51,3 +51,12 @@ msgstr "Friend"
 
 msgid "team"
 msgstr "Team"
+
+msgid "ru"
+msgstr "Русский"
+
+msgid "br"
+msgstr "Brazil"
+
+msgid "en"
+msgstr "English"

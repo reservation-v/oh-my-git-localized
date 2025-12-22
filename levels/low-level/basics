@@ -21,8 +21,8 @@ For technical reasons, you can't use cd in this prototype yet. But there won't b
 [setup]
 
 mkdir riddle
-echo "_(ppl p)" > riddle/consonants
-echo "_(ae ie)" > riddle/vowels
+echo "ppl p" > riddle/consonants
+echo "ae ie" > riddle/vowels
 
 [win]
 

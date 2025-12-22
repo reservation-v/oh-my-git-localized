@@ -12,7 +12,7 @@ rm -rf .git
 
 [setup friend]
 
-echo "_(2 + 3 =)" > file
+echo "2 + 3 =" > file
 git add .
 git commit -m "Initial commit"
 
